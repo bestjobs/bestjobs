@@ -1,2 +1,2 @@
 
-Sitemap: https://bestjobs.github.io/bestjobs/sitemap.xml
+Sitemap: https://www.bestjobs.gq/sitemap.xml
