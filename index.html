@@ -1,1 +1,50 @@
-index.html
+<!doctype html><html lang=en><meta charset=utf-8><meta content=#fff name=theme-color><meta content=origin-when-crossorigin name=referrer id=meta_referrer><meta content="width=device-width,initial-scale=1,shrink-to-fit=no" name=viewport><title>Bestjobs jobs quest ratings career tips trainings courses</title><meta content="Bestjobs jobs quest ratings career tips trainings courses, sophisticated job board can help you turn your job into a career" name=description><meta name=robots content=noodp,noydir><link href=https://www.bestjobs.gq/ rel=canonical></head><body>
+<h1 id="bestjobs">bestjobs</h1>
+
+<p>For me static site generators(SSG) (Hugo in my case or Jekyll or Gatsby) have replaced Wordpress anytime I have a fairly straightforward website to do that needs content administration by the enduser.</p>
+
+<p>Plain static html is great for « static » content. Code once, never touch again (like an event landing page or anything like that). End user don’t have to mess with it and you don’t either.</p>
+
+<p>But as soon as you need to let the end user manage content, it’s no longer an option, and even if YOU handle any content updates, plain static html files will render this needlessly time consuming. Moreover, even for a basic blog, you will duplicate A LOT of code (think of your main nav for example) which will make any update an increasingly laborious process that will soon become a source of errors (your nav structure has evolved ? You need to edit ALL your pages to propagate the changes). Again I ‘m assuming plain html/css here without any bells and whistles.</p>
+
+<p>Enter CMS like wordpress. With them comes the notion of templates and dynamic content. Suddenly your html/css is split into manageable chunks and dynamically feeded with content coming from a database. Our example of a nav structure change now only need you to edit one file, your nav template. What’s more, you have a backend administration more or less enduser friendly so that they can handle content updates without having to see any code. But these solutions need more complex hosting, including databases, and are more vulnerable to hacking since the server execute php with each request.</p>
+
+<p>That’s where the Static sites generators comes in. With SSG you retain the templating structure of CMS, the content is separated from the structure (content often being a simple markdown file), and the build command handle the generation of the final static server side files. That means cheap hosting, no databases and no code execution on each request. So out of the box, it’s a cheap way to handle secure website where YOU can manage content by adding/editing simple markdown files and run the build command before pushing the files generated to your server. But if we end up here it’s not that big of a deal… The power of static sites generators comes from their easy integration in automated process.</p>
+
+<p>Take hosting for example : You use github or similar to version your website source code. You can then hook a service like netlify to your repo and with each new push to master, netlify will get the new source, run the build command and publish the generated files, all for free (with added benefits like assets optimization, automated cdn, etc…). So now to manage content, you just add/edit some markdown files and push the changes to your repo and boom the changes are online.</p>
+
+<p>But all this is still not end user friendly. No worries there’s a solution for that too. Add Forestry (free for basic use) for example to the mix and you can have a fancy custom backend admin for your enduser. He can just add/edit pages like in a cms, copy/paste his content in rich text fields and save his modifications. Forestry will generate the corresponding markdown files and push them to your repo, which will trigger netlify that will handle publication.</p>
+
+<p>So to summarize, at this point you have a fully manageable website with all the advantages of a CMS but with bullet proof security (only static files online), custom enduser friendly admin backend and versioning of any modifications to the files, all this for free.</p>
+
+<p>No brainer to me for a lot of straightforward websites. Wordpress out, Hugo in.</p>
+
+<p>There’s nothing wrong with the above, especially now that CSS support is universal in all browsers. For example, you could have a file named TEMPLATE.html on your webserver that looks like this:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang='en-US'&gt;
+&lt;head&gt;
+    &lt;meta charset='UTF-8'&gt;
+    &lt;title&gt;Change Me&lt;/title&gt;
+    &lt;link rel='stylesheet' href='/css.css'&gt;
+    &lt;script defer src='/js.js'&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Change Me&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div>
+<p>You’d then copy this template to /index.html, /about/index.html, /wuffles/index.html to have a root page, an about page, and a page about your dog, respectively. Because you have common CSS and Javascript, you can change some things in common files and have the entire site change when you change just one file.
+However, what if you want to have a sidebar with links in it to a bunch of different sections of your site? Sure, you can copy and paste one into every single page on your site, but what if you want to change it later? Editing every single page on your site just to add a single link that shows up everywhere is a royal pain in the rear. This sort of repetitive work is better handled by some sort of HTML generator like a static-site generator(SSG) or a dynamic generator.
+or a cached dynamic site (Like workPress Cache for example)
+Do you know how many remote exploits WordPress has had in the past five years? Probably thousands. Do you know how many remote exploits Apache or nginx have had in the past five years that an attacker can use to mess up your website and infect your visitors’ computers? Maybe one. I used to use WordPress for my site, but realized I was spending more time patching WordPress it than writing things to put on it. I moved to an SSG and haven’t looked back.</p>
+
+<p>You can host static sites for free on Github Pages or for pennies on S3 with Cloudflare in front of it.
+Frameworks (static site generators) just make them significantly easier to develop and maintain especially if there’s lots of community contributors to said frameworks.</p>
+
+<p>If you’re making a one page marketing site, it wouldn’t make sense to use an SSG, but if you start to have something with multiple articles, it starts to make loads of sense very quickly.
+Imagine you have a blog with 100 posts. Each entry displays the site’s header with navigation. You want to add a new entry to your navigation. Without a static generator you have to edit 100+ files. With a generator you edit one single file and rebuild your website. Also you can store your information anywhere you want. The generation process can fetch your sites content from an external API, a database or whatever.</p>
+
+<p>Using caching is pretty close, but you still need a dynamic language like PHP to use your CMS and update your website. Using a static generator you don’t need that. Also there are hosting environments especially for static only websites (e.g. GitHub Pages and Netlify). For these CMS with caching is not an option.</p>
+<h3 id="bestjobs-1">@bestjobs</h3>
+<script type="application/ld+json">
+{"@type":"WebSite","headline":"bestjobs","url":"https://www.bestjobs.gq/","name":"https://www.bestjobs.gq/","description":"https://www.bestjobs.gq/","@context":"https://schema.org"}</script><noscript>Your browser does not support JavaScript</noscript>
