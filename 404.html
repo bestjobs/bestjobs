@@ -19,15 +19,15 @@
     </style>
 </head>
 <body>
-    <nav><a href="/" class="logo">💼 Bestjobs.BG</a></nav>
+    <nav><a href="https://bestjobs.bg" class="logo">💼 Bestjobs.BG</a></nav>
     <div class="error-container">
         <div class="error-code">404</div>
         <h1 id="err-title">Страницата не е намерена</h1>
         <p id="err-desc">Линкът може да е остарял, обявата да е изтекла или страницата да е преместена.</p>
-        <a href="/" class="btn-home" id="err-btn">Към началната страница</a>
+        <a href="https://bestjobs.bg" class="btn-home" id="err-btn">Към началната страница</a>
         <div class="countdown" id="countdown-text">Ще бъдете пренасочени автоматично след <span id="timer">8</span> секунди...</div>
     </div>
-    <footer>&copy; <span id="year"></span> Bestjobs.BG Всички права запазени.</footer>
+    <footer>&copy; <span id="year"></span> Bestjobs.BG. Всички права запазени.</footer>
     <script>
         document.getElementById('year').textContent = new Date().getFullYear();
         if (localStorage.getItem('site_lang') === 'en') {
@@ -36,7 +36,7 @@
             document.getElementById('countdown-text').innerHTML = "You will be redirected automatically in <span id='timer'>8</span> seconds...";
         }
         let seconds = 8; const timerElement = document.getElementById('timer');
-        const interval = setInterval(() => { seconds--; timerElement.textContent = seconds; if (seconds <= 0) { clearInterval(interval); window.location.href = "/"; } }, 1000);
+        const interval = setInterval(() => { seconds--; timerElement.textContent = seconds; if (seconds <= 0) { clearInterval(interval); window.location.href = "https://bestjobs.bg"; } }, 1000);
     </script>
 </body>
-</html>
+</html> 
