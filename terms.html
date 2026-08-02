@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Общи условия за ползване | Bestjobs.BG</title>
+    <style>
+        :root { --primary: #1a73e8; --dark: #202124; --border: #dadce0; --text-muted: #5f6368; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f1f3f4; color: var(--dark); display: grid; grid-template-rows: auto 1fr auto; min-height: 100vh; }
+        nav { background-color: white; border-bottom: 1px solid var(--border); padding: 15px 20px; display: grid; }
+        nav .logo { font-size: 20px; font-weight: bold; color: var(--primary); text-decoration: none; justify-self: center; }
+        .terms-container { max-width: 800px; margin: 30px auto; background: white; padding: 40px; border-radius: 8px; border: 1px solid var(--border); }
+        h1 { font-size: 24px; border-bottom: 2px solid var(--primary); padding-bottom: 15px; margin-bottom: 25px; }
+        h2 { font-size: 18px; color: var(--primary); margin-top: 25px; }
+        p, li { font-size: 14px; line-height: 1.6; text-align: justify; }
+        .back-link { display: inline-block; margin-top: 30px; color: var(--primary); text-decoration: none; font-weight: 600; }
+        footer { background-color: white; border-top: 1px solid var(--border); padding: 20px; text-align: center; font-size: 13px; color: var(--text-muted); }
+    </style>
+</head>
+<body>
+    <nav><a href="index.html" class="logo">💼 Bestjobs.BG</a></nav>
+    <div class="terms-container">
+        <h1 id="terms-title">Общи условия за ползване на платформата Bestjobs.BG</h1>
+        <p><em>Последна промяна: 2 август 2026 г.</em></p>
+        <h2>1. Общи разпоредби</h2>
+        <p>Bestjobs.BG е онлайн платформа за безплатни и платени обяви за работа. Сайтът функционира изцяло на страната на клиента и улеснява директния контакт между работодатели и търсещи работа.</p>
+        <h2>2. Платени услуги (VIP Обяви)</h2>
+        <p>Платформата предлагает възможност за публикуване на VIP обяви срещу заплащане от 10.00 EUR чрез Stripe Elements. Тъй като услугата се изпълнява незабавно, суми не подлежат на възстановяване.</p>
+        <a href="index.html" class="back-link" id="back-btn">← Обратно към началната страница</a>
+    </div>
+    <footer>&copy; <span id="year">2026</span> Bestjobs.BG Всички права запазени.</footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        if (localStorage.getItem('site_lang') === 'en') {
+            document.title = "Terms of Service | Bestjobs.BG"; document.getElementById('back-btn').textContent = "← Back to Home Page";
+            document.getElementById('terms-title').textContent = "Terms of Service for Bestjobs.BG";
+        }
+    </script>
+</body>
