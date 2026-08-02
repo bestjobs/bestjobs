@@ -124,4 +124,4 @@ function populateOptions(lang) {
     `;
 }
 
-formTypeSelect.addEventListener('change', () => { if (formTypeSelect.value === 'vip') { cardWrapper.classList.remove('hidden'); } else { cardWrapper.classList.add('hidden'); } });
+formTypeSelect.addEventListener('change', () => { if (formTypeSelect.value === 'vip') { cardWrapper.classList.remove('hidden'); } else { cardWrapper.classList.add('hidden'); } }); 
