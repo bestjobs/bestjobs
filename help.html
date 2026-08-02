@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Помощ за работодатели | Bestjobs.BG</title>
+    <style>
+        :root { --primary: #1a73e8; --dark: #202124; --border: #dadce0; --text-muted: #5f6368; }
+        body { font-family: 'Segoe UI', sans-serif; margin: 0; background-color: #f1f3f4; color: var(--dark); display: grid; grid-template-rows: auto 1fr auto; min-height: 100vh; }
+        nav { background-color: white; border-bottom: 1px solid var(--border); padding: 15px 20px; display: grid; }
+        nav .logo { font-size: 20px; font-weight: bold; color: var(--primary); text-decoration: none; justify-self: center; }
+        .help-container { max-width: 800px; margin: 30px auto; background: white; padding: 40px; border-radius: 8px; border: 1px solid var(--border); }
+        h1 { font-size: 24px; border-bottom: 2px solid var(--primary); padding-bottom: 15px; margin-bottom: 25px; }
+        h2 { font-size: 18px; color: var(--primary); margin-top: 25px; }
+        p, li { font-size: 14px; line-height: 1.6; text-align: justify; }
+        .back-link { display: inline-block; margin-top: 30px; color: var(--primary); text-decoration: none; font-weight: 600; }
+        footer { background-color: white; border-top: 1px solid var(--border); padding: 20px; text-align: center; font-size: 13px; color: var(--text-muted); }
+    </style>
+</head>
+<body>
+    <nav><a href="/index.html" class="logo">💼 Bestjobs.BG</a></nav>
+    <div class="help-container">
+        <h1 id="help-title">Помощ за работодатели & FAQ</h1>
+        <h2>Как да публикувам обява?</h2>
+        <p>Попълнете формата вляво, изберете тип обява и натиснете бутона. VIP обявите се заплащат сигурно с карта през Stripe Elements и се подреждат най-отгоре.</p>
+        <h2>Къде пристигат кандидатурите?</h2>
+        <p>Всички CV-та пристигат директно на предоставения от Вас имейл адрес чрез автоматично генерирано от нас писмо.</p>
+        <a href="/index.html" class="back-link" id="back-btn">← Обратно към началната страница</a>
+    </div>
+    <footer>&copy; <span id="year"></span> Bestjobs.BG. Всички права запазени.</footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        if (localStorage.getItem('site_lang') === 'en') {
+            document.title = "Employer Help Center | Bestjobs.BG"; document.getElementById('back-btn').textContent = "← Back to Home Page";
+            document.getElementById('help-title').textContent = "Employer Help Center & FAQ";
+        }
+    </script>
+</body>
+</html>
