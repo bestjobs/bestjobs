@@ -1,6 +1,6 @@
 # bestjobs
 ---------
-OLD info, need edition!!!
+OLD info, need edition!!! 
 For me static site generators(SSG) (Hugo in my case or Jekyll or Gatsby) have replaced Wordpress anytime I have a fairly straightforward website to do that needs content administration by the enduser.
 
 Plain static html is great for « static » content. Code once, never touch again (like an event landing page or anything like that). End user don’t have to mess with it and you don’t either.
