@@ -1,5 +1,6 @@
-
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /*?keyword=
+Disallow: /*?location=
 
-Sitemap: https://www.bestjobs.gq/sitemap.xml
+Sitemap: https://bestjobs.bg/sitemap.xml
